@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+@import url('https://fonts.googleapis.com/css?family=Playball|Shadows+Into+Light+Two');
+*{
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    
+    margin: 0;
+    font-family: 'Spicy Rice', cursive;
+    font-size: 17px;
+}
+
+.home {
+    
+    background-image: url('https://images.pexels.com/photos/108370/pexels-photo-108370.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    height:  100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px ;
+    text-align: center;
+   background-attachment: fixed;
+  opacity: 0.85;
+    
+    
+}
+
+.home .first-title {
+    font-size: 90px;
+    line-height:70px;
+    color : yellow ;
+    font-family: 'Playball', cursive;
+    
+}
+.first-paragraph {
+    font-size : 30px ;
+    font-family : 'Spicy Rice', cursive;
+  }
+
+.home p {
+    
+    line-height: 70px;
+}
+ /* social media */
+.fab {
+  width: 40px;
+	height: 40px;
+	line-height: 50px;
+	color: #FFF;
+	color: rgba(255, 255, 255, 0.8);
+  font-size: 1.8em;
+  -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+  
+}
+.fa-facebook{
+  color:blue;
+}
+.fa-instagram{
+  color:red;
+}
+.fab:hover { 
+ 	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+	transform: scale(1.1) rotate(360deg);
+}
+ /* navbar */
+.navbutton {
+  position :fixed ;
+  top : 5% ;
+  right : 5% ;
+  font-size : 40px ;
+  cursor :pointer ;
+  animation-name : pulse ;
+  animation-duration : 2s ;
+  animation-iteration-count : infinite ;
+  color : #000000 ;
+}
+.navbutton:hover {
+  color : #fff ;
+}
+
+/*animation*/
+@keyframes pulse {
+  0%{
+    transform : scale(1)
+  }
+  50%{
+     transform : scale(1.2)
+  }
+  100%{
+     transform : scale(1)
+  }
+}
+
+.nav {
+  background-color : rgba(255, 0, 0, 0.4);
+  position : fixed ;
+  left : 0;
+  top : 0 ;
+  height : 100% ;
+  width : 130px ;
+  
+}
+.nav {
+  width : 0px ;
+  overflow : hidden ;
+  transition : all 0.5s linear ;
+}
+.nav--show {
+  width : 130px ;
+}
+ul {
+  line-height : 150px ;
+}
+li {
+  font-size : 30px ;
+  cursor : pointer ;
+  transition : 0.5s linear ;
+  font-family : 'Spicy Rice', cursive;
+ 
+  
+}
+li:hover {
+  background-color : #F92950 ;
+  width : 100% ;
+  color : #fff ;
+}
+
+.second-link:hover {
+    text-decoration : none ;
+    color : #fff ;
+  }
+  .third-link:hover {
+    text-decoration : none ;
+    color : #fff
+  }
+  .forth-link:hover {
+    text-decoration : none ;
+    color : #fff
+  }
+  .fifth-link:hover{
+    text-decoration : none ;
+    color : #fff
+  }
+  .second-link {
+    color : pink ;
+  }
+  .third-link {
+    color : pink ;
+  }
+  .forth-link {
+    color : pink ;
+  }
+  .fifth-link {
+    color : pink ;
+  }
+
+
+
+
+/*about*/
+.about-us {
+    font-family :'Spicy Rice', cursive;
+    font-size: 30px;
+  
+}
+.lead {
+    font-family :'Playball', cursive;
+    font-size : 20px ;
+}
+/*products*/
+.title-work {
+    background-image : url('https://images.pexels.com/photos/1250289/pexels-photo-1250289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    height:100px;
+    background-size: cover;
+    opacity: 0.70;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top : -50px ;
+    text-align : center ;
+    padding-top : 25px ;
+    font-size : 30px ;
+    color : yellow ;
+    font-family : 'Spicy Rice', cursive;
+}
+
+.product-container {
+    max-width : 80vw ;
+    margin : 2rem auto;
+}
+.product-item__img{
+  width : 100% ;
+  height : 100% ;
+  display : block ;
+  transition : all 1s linear ;
+}
+.product-item {
+ background-color: yellow;
+  overflow : hidden ;
+  border-radius: 15px;
+}
+.product-item:hover .product-item__img {
+  opacity : 0.5 ;
+  transform : scale(1.2);
+}
+@media screen and (min-width:576px){
+  .product-container{
+    display : grid ;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+@media screen and (max-width:576px){
+    .product-container{
+      display : grid ;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+    }
+  }
+
+@media screen and (min-width:992px){
+  .product-container{
+    grid-template-columns : repeat(4,1fr) ;
+    grid-template-rows : repeat(4,1fr) ;
+  }
+}
+  /*Our Shops*/
+
+  .ourShop{
+    margin-top : -800px ;
+    display : flex ;
+    justify-content : space-around ;
+    background-color : #FFF5EB ;
+    align-items : center ;
+   
+  }
+  @media screen and (max-width: 1200px){
+    .ourShop{
+        margin-top : -600px ;
+      }
+  }
+  @media screen and (max-width:992px){
+    .ourShop{
+        margin-top : 30px ;
+      }
+  }
+ 
+  @media screen and (max-width:576px){
+    .ourShop{
+        margin-top : 50px ;
+      }
+  }
+
+  .carousel-inner{
+    margin: 30px 0px;
+    border-radius: 15px ;
+    height : 200px ;
+    margin-left: 15px;
+  }
+.carousel-inner  img{
+    width: 100% ;
+    height: 60vh;
+    text-align: center;
+}
+  .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .paragraphtitle {
+    width : 50% ;
+    font-family : 'Spicy Rice', cursive;
+  }
+  h2{
+    font-family : 'Spicy Rice', cursive;
+  }
+  .paragraph {
+    font-family :'Playball', cursive;
+    font-size : 20px ;
+  }
+ 
+
+/* Modal */
+  .modal-title{
+    font-family: 'Playball', cursive;
+    font-size : 30px ;
+    color : #E0115F ;
+  }
+  .modal-body{
+    text-align: justify;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size:20px;
+  }
+
+  
+  .modal-footer .btn{
+    background-color:#B99880;
+    border:none ;
+    border-radius: 12px;
+    color: black;
+    font-weight:bold;
+    font-style: italic;
+    cursor: pointer;
+  }
+ 
+  .contact-area{
+    margin-top: 20px;
+  background-color : pink ;
+    height: 400px;
+    padding: 20px;
+    
+  }
+  .contact-area .btnSubmit{
+    background-color:#FFECEC;
+    border:none;
+    color:black;
+  }
+  .allstars{
+  display : flex ;
+  justify-content : space-around ;
+  
+}
+  
+  .last-title {
+      background-image : url('https://images.pexels.com/photos/1250289/pexels-photo-1250289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+     height:100px;
+    background-size: cover;
+     opacity: 0.70;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  margin-top : 2px ;
+  text-align : center ;
+  padding-top : 25px ;
+  font-size : 40px ;
+  color : yellow ;
+    font-family : 'Spicy Rice', cursive;
+  }
+  
+  
+  .contact-container {
+    padding : 30px ;
+    
+  }
+  .contact-info {
+    display : grid ;
+    justify-content : center ;
+
+  }
+  .contact-item {
+    margin : 1rem 0 ;
+    padding : 0.5rem ;
+  }
+  .contact-item-icon{
+    font-size : 35px ;
+    color : #F92950 ;
+  }
+  .contact-item-title {
+    font-family : 'Spicy Rice', cursive;
+ 
+    margin :0.5rem 0 ;
+    color : #F92950 ;
+  }
+  
+  .contact-item-texte {
+    font-size : 1rem ;
+    text-transform : uppercase ;
+    color :#E4D0C6 ;
+  }
+  input {
+    border-radius : 15px ;
+    padding:15px ;
+   
+  }
+  
+
+ 
+  .newsletter{
+    font-family : 'Spicy Rice', cursive;
+      color  : #FFC9D3 ;
+  }
+  .follow {
+    font-family : 
+      'Spicy Rice', cursive;
+     color  : #DC3545 ;
+  }
+   .button {
+  background: #fff;
+  padding: 1em 2em;
+  color: #EE4747;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+   font-family : 'Spicy Rice', cursive;
+  };
+   
+  
+
+.button:hover {
+  background:#ebebe0;
+}
+
+  iframe {
+    margin-top : 20px ;
+  }
+  .text-center {
+    margin-top : 40px ;
+ 
+  }
+  /*footer*/
+  
+  .the-end {
+    height : 150px;
+    text-align : center ;
+    background-color : #FFC9D3 ;
+    padding-top : 50px ;
+    line-height : 30px ;
+    margin-top : 50px ;
+    
+  }
+  .scrolling{
+    border : 2px solid #EB2626 ;
+    border-radius : 40px ;
+    padding : 3px 10px ;
+    font-size : 25px ;
+    margin-top : 40px ;
+    cursor : pointer ;
+  }
+  .fas{
+    color : #EB2626 ;
+  }
+  .title-footer {
+    font-size: 60px;
+    color : #DC3545 ;
+    font-family: 'Playball', cursive;
+  }
+  #msgValidation {
+      font-family : 'Spicy Rice', cursive;
+  color : #FF2626;
+  text-align : center ;
+    
+  }
+
+  
+  
+
+
+
+
+
